@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel.com</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(project2/beach.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .left {
+        display: inline-block;
+        left: 28px;
+        top: 20px;
+        position: absolute;
+    }
+
+    .left img {
+        width: 65px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 38%;
+        margin: 20px auto;
+    }
+
+    .right {
+        display: inline-block;
+        right: 28px;
+        top: 20px;
+        position: absolute;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: blue;
+        text-decoration: none;
+        padding: 2px 4px;
+    }
+
+    .navbar li a:hover {
+        color: red;
+    }
+
+    .btn {
+        margin: 8px -1px;
+        background-color: black;
+        color: white;
+        padding: 4px 11px;
+        border: 1.5px solid aqua;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+        color: black;
+    }
+
+    .container {
+        display: inline-block;
+        border-radius: 10px;
+        padding: 2px 42px;
+        text-align: center;
+        width: auto;
+    }
+
+    .signup {
+        float: left;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 2px 0px;
+        padding-left: 0px;
+        text-align: center;
+        width: auto;
+        margin-right: auto;
+    }
+
+    .formgrp input {
+        text-align: center;
+        display: inline-block;
+        width: 335px;
+        padding: 11px;
+        margin: 17px 90px;
+        border-radius: 12px;
+    }
+
+    .btn2 {
+        margin: 8px -1px;
+        background-color: black;
+        color: white;
+        padding: 11px 84px;
+        border: 1.5px solid aqua;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .btn2:hover {
+        background-color: gray;
+        color: black;
+    }
+
+    a {
+        color: darkred;
+        text-decoration: none;
+        text-size-adjust: 22px;
+        padding: 20px;
+
+
+    }
+
+    a:hover {
+        color: red;
+        text-shadow: blue;
+    }
+
+    img {
+        width: 272px;
+        border-radius: 34px;
+        padding: 0px;
+    }
+    img:hover {
+        width: 272px;
+        border-radius: 34px;
+        padding: 0px;
+        box-shadow: 5px 5px 5px white;
+    }
+
+    .heading {
+        color: white;
+        font-size: 34px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        margin: 46px;
+        padding: 2px;
+        background-color: black;
+        border-radius: 24px;
+        border: 2px solid white;
+    }
+
+    .img2 {
+        width: 465px;
+        padding-left: 56px;
+        border-radius: 6px;
+    }
+
+    .para {
+        padding: 27px;
+    margin: 33px;
+    padding: auto;
+    padding-right: 176px;
+    margin-right: -14px;
+    margin-top: -38px;
+    padding-top: auto;
+    text-align: center;
+    }
+
+    .btn3 {
+        margin: 8px -1px;
+        background-color: rgba(134, 11, 11, 0.714);
+        color: white;
+        padding: 11px 84px;
+        border: 1.5px solid black;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .btn3:hover {
+        color: black;
+        background-color: rgb(105, 101, 101);
+    }
+
+    .travel {
+        width: 100%;
+        height: 600px;
+        border: 2px solid red;
+    }
+
+    .img3 {
+        width: 100%;
+        height: 600px;
+        border-radius: 0px;
+    }
+
+    .leftmov {
+        float: left;
+    }
+
+    .img4 {
+        width: 300px;
+        height: 300px;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .info1{
+        background:url(project2/accomodation.jpg);
+        width: 25%;
+        height: 600px;
+        float: left;
+    }
+    .fdiv{
+        float: left;
+        background:url(project2/dubai.jpg);
+        width: 300px;
+        height: 300px;
+        text-align: center;
+    }
+    .sdiv{
+        float: right;
+        background:url(project2/airport.jpg);
+        width: 300px;
+        height: 300px;
+        text-align: center;
+    }
+    .tdiv{
+        float: left;
+        background:url(project2/cruis.jpg);
+        width: 300px;
+        height: 300px;
+        text-align: center;
+    }
+    .fodiv{
+        float: right;
+        background:url(project2/pool.jpg);
+        width: 300px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .btn4 {
+        margin-top: 136px;
+        background-color: rgba(134, 11, 11, 0.714);
+        color: white;
+        padding: 11px 84px;
+        border: 1.5px solid black;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .btn4:hover {
+        color: black;
+        background-color: rgb(105, 101, 101);
+    }
+    .fifthdiv{
+        background:url(project2/pool.jpg);
+        width: 25%;
+        height: 600px;
+        float: right;
+    }
+    .btn5 {
+        margin-top: 286px;
+        margin-left: 49px;
+        background-color: rgba(134, 11, 11, 0.714);
+        color: white;
+        padding: 11px 84px;
+        border: 1.5px solid black;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .btn5:hover {
+        color: black;
+        background-color: rgb(105, 101, 101);
+    }
+
+</style>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="project2/beach.jpg" alt=""><br>
+            <div>travel.com</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar"><b>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="active">About Us</a></li>
+                    <li><a href="#" class="active">Travel Insurance</a></li>
+                    <li><a href="#" class="active">Contact us</a></li>
+                    <li><a href="#" class="active">Help</a></li>
+                </b>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <div>
+            <img src="project2/aagra.jpg" alt="Error loading"><br>
+            <a href=""> Aagra </a> <br>
+            <img src="project2/kolkata.jpg" alt="Error loading">
+            <br><b>
+                <a href=""> Kolkata </a></b>
+        </div>
+
+
+    </div>
+    <div class="signup">
+        <h1>SignUp</h1>
+        <form action="backend.php">
+            <div class="formgrp">
+                <div>
+                    <input type="text" placeholder="Enter your email ID">
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter Password">
+                </div>
+                <div>
+                    <input type="text" placeholder="Retype Password">
+                </div>
+            </div>
+            <button class="btn2">Submit</button>
+            <button class="btn2">Click to Login</button>
+        </form>
+    </div>
+    <div class="container">
+        <img src="project2/mumbai.jpg" alt="error"><br>
+        <a href=""> Mumbai </a> <br>
+        <img src="project2/goa.jpg" alt=""><br>
+        <a href=""> Goa </a>
+    </div>
+
+    <div style="width: 100%; height:20pxpx;">
+        <h1 class="heading">Plan your trip</h1>
+    </div>
+    <div>
+        <div style="width:50%; float: left;">
+            <img src="project2/hotel.jpg" alt="error" class="img2">
+        </div>
+        <div class="para" ;float:left>
+            <h2>
+                <center>
+                    <h2><b>Travel tips</b></h2>
+                </center>
+                <p> travel.com is a destination that offers novel, authentic experiences.
+                    Read some tips that will help better navigate the local culture
+                    and fully enjoy your time in travel.com.</p>
+
+                <button class="btn3">Read More</button>
+        </div>
+    </div>
+    <div class="info1">
+        <h3><p>Getting <br> Arround</p></h3>
+        <button class="btn5">Explore</button>
+    </div>
+    <div style="width: 48%; padding-left: 7px; float: left;">
+        <div>
+            <div class="fdiv" >
+                <button class="btn4">Explore</button>
+            </div>
+
+            <div class="sdiv">
+                <button class="btn4">Explore</button>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="tdiv" >
+                <button class="btn4">Explore</button>
+            </div>
+
+            <div  class="fodiv">
+                <button class="btn4">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="fifthdiv">
+        <h3><p>Accomodation</p></h3>
+        <button class="btn5">Explore</button>
+    </div>
+
+</body>
+
+</html>
